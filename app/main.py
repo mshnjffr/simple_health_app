@@ -11,7 +11,7 @@ class FastAPIApp:
     def _include_routes(self):
         self.app.include_router(health_router)
         self.app.include_router(self_router)
-        self.app.include_router(secure_router)
+        # self.app.include_router(secure_router)
 
     def get_app(self):
         return self.app
